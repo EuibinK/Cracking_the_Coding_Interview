@@ -53,6 +53,56 @@
 
 ## Space Complexity
 
+: Also need to take memory or space into account
+
+e.g. an array of size n -- O(n), a two-dimensional array of size nxn -- O(n^2)
+
+
+
+- Stack, recursive calls --> O(n) time & O(n) space
+
+  ```c++
+  int sum(int n) {
+  	if (n <= 0) {
+  		return 0;
+  	}
+  	return n + sum(n-1);
+  }
+  ```
+
+  - e.g. sum(4)
+
+    ```
+    sum(4)
+    	-> sum(3)
+    		-> sum(2)
+    			-> sum(1)
+    				-> sum(0)
+    
+    --> each of these calls is added to the call stack, taking up actual memory
+    ```
+
+
+
+- Adding adjcanet elements between 0 and n
+
+  ```c++
+  int pairSumSequence(int n) {
+  	int sum = 0;
+  	for (int i = 0; i < n; i++) {
+  		sum += pairSum(i, i+1);
+  	}
+  	return sum;
+  }
+  
+  int pairSum(int a, int b) {
+  	return a + b;
+  }
+  
+  // will be roughly O(n) calls to pairSum but these calls don't exist simultaneously
+  // need O(1) space
+  ```
+
 
 
 
