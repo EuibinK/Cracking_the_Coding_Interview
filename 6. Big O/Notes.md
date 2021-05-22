@@ -18,9 +18,12 @@
   - e.g. an algorithm that prints all the values in an array - Ω(N), Ω(log N)... etc
 
 - **θ (Big Theta)** - both O and ∆ - tight bound
+
   - " - θ(N)
 
-  **Tip**
+    
+
+**Tip**
 
 - in industry, big O is closer to what academics mean by θ.
 
