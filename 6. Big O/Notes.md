@@ -28,7 +28,7 @@
 
 ### Best Case, Worst Case, and Expected Case
 
-: Let's think of a quick sort
+: Let's think of a quick so
 
 
 
